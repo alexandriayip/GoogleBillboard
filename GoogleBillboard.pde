@@ -3,26 +3,21 @@ public void setup()
 {            
 String digits = e.substring(0,10);
 double dNum = Double.parseDouble(digits);
-System.out.println(dNum);
+
 }  
 public void draw()  
 {   
 	//not needed for this assignment
 }  
-public boolean isPrime(double dNum)  
+public double isPrime(double dNum)  
   {   
-  
-  if (dNum < 2){
-    return false;
-  }
 for(int i = 2; i <= Math.sqrt(dNum); i++){
   
      if (dNum%i ==0){
-     return false;
+     System.out.println(dNum);
    }
 
 }
-return true;
 
 }
 
